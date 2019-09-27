@@ -43,8 +43,8 @@ d3.csv("data/wealth-health-2014.csv", (row)=>{
 		let populationMax = d3.max(data, d=>d.Population);
 
 		let svg = d3.select('#chart-area').append('svg')
-       				.attr('width', width + margin.left + margin.right) //need to change
-					.attr('height', height + margin.top + margin.bottom) //need to change
+       				.attr('width', width + margin.left + margin.right) 
+					.attr('height', height + margin.top + margin.bottom)
 					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 		
 		// let g = svg.append('g');
